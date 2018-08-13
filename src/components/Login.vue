@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="mt-5">
         <img class="mb-5 mt-5" src="../assets/generic-logo.svg" width="250px" alt="">
         <div class="social-networks-buttons mt-5">
             <button class="facebook-button p-2 mb-3">Login com Facebook</button>
