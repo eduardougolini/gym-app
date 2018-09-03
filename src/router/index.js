@@ -4,6 +4,7 @@ import Login from '../pages/Login';
 import Default from '../pages/Default';
 import Home from '../pages/Home';
 import TrainingsList from '../pages/TrainingsList';
+import ExerciseManager from '../pages/ExerciseManager';
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/trainings',
       name: 'trainings',
       component: TrainingsList
+    },
+    {
+      path: '/exercise',
+      name: 'exercise',
+      component: ExerciseManager
     }
   ]
 })

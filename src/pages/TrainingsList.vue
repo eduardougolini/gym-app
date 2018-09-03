@@ -16,7 +16,9 @@
                     <div class="card-body">
                         <h5 class="card-title">{{ item.title }}</h5>
                         <p class="card-text">{{ item.info }}</p>
-                        <a href="#" class="btn btn-primary">Treinar</a>
+                        <router-link :to="{name: 'exercise'}">
+                            <button class="btn btn-primary">Treinar</button>
+                        </router-link>
                     </div>
                 </div>
             </template>
