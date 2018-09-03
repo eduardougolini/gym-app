@@ -28,52 +28,55 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.social-networks-buttons {
-    .facebook-button {
+
+    @import "../../public/scss/variables";
+
+    .social-networks-buttons {
+        .facebook-button {
+            width: 80%;
+            background-color: #4a67a1
+        }
+        .google-button {
+            width: 80%;
+            background-color: #df4e3b
+        }
+    }
+
+    .division {
+        display: flex;
+        color: #9a9a9a;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    input {
+        &:focus {
+            border-bottom: 2px $primary solid;
+        }
+
+        outline: none;
         width: 80%;
-        background-color: #4a67a1
+        height: 2em;
+        border: 0;
+        border-bottom: 1px black solid;
     }
-    .google-button {
+
+    button {
         width: 80%;
-        background-color: #df4e3b
-    }
-}
-
-.division {
-    display: flex;
-    color: #9a9a9a;
-}
-
-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-input {
-    &:focus {
-        border-bottom: 3px #42b983 solid;
+        color: white;
+        background-color: $primary;
+        border: 0;
+        border-radius: 25px;
     }
 
-    outline: none;
-    width: 80%;
-    height: 2em;
-    border: 0;
-    border-bottom: 1px black solid;
-}
-
-button {
-    width: 80%;
-    color: white;
-    background-color: #42b983;
-    border: 0;
-    border-radius: 25px;
-}
-
-.links {
-    color: #42b983;
-    display: flex;
-    justify-content: space-around;
-}
+    .links {
+        color: $primary;
+        display: flex;
+        justify-content: space-around;
+    }
 </style>

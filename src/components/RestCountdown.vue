@@ -64,6 +64,9 @@
 </script>
 
 <style lang="scss" scoped>
+
+    @import "../../public/scss/variables";
+
     .countdown {
         border-radius: 130px;
         height: 200px;
