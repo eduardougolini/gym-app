@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Login from '../components/Login';
-import Default from '../components/Default';
-import Home from '../components/Home';;
+import Login from '../pages/Login';
+import Default from '../pages/Default';
+import Home from '../pages/Home';
+import TrainingsList from '../pages/TrainingsList';
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/home',
       name: 'home',
       component: Home
+    },
+    {
+      path: '/trainings',
+      name: 'trainings',
+      component: TrainingsList
     }
   ]
 })

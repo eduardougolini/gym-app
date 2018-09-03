@@ -1,10 +1,12 @@
 <template>
-    <div>
-        <nav v-if="expanded">
+    <div class="gym-menu">
+        <nav class="expanded" v-if="expanded">
             <div v-on:click="expandOrHideMenu()">
                 <close-icon w="50" h="50"></close-icon>
             </div>
-            <slot></slot>
+            <router-link :to="{name: 'trainings'}">
+                <button class="btn">Treinos</button>
+            </router-link>
         </nav>
         <header v-else>
             <div v-on:click="expandOrHideMenu()">
@@ -38,6 +40,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    .expanded {
+        position: relative;
+        height: 100vh;
+    }
+
     header {
         text-align: left;
         margin: 10px 0 0 10px;

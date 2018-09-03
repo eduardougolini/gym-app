@@ -1,14 +1,12 @@
 <template>
     <div>
-        <gym-menu>
-            <button class="btn">botão 1</button>
-        </gym-menu>
+        <gym-menu />
     </div>
 </template>
 
 <script>
 
-import GymMenu from './GymMenu.vue';
+import GymMenu from '../components/GymMenu.vue';
 
 export default {
     name: 'home',
