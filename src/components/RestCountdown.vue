@@ -1,6 +1,6 @@
 <template>
     <div>
-        <countdown v-if="startedCounter" class="countdown" :time="time" tag="p">
+        <countdown v-if="startedCounter" @countdownend="counterEnded" class="countdown" :time="time" tag="p">
             <template slot-scope="props">
                 <div @click="invertCounterStatus" class="d-flex justify-content-center align-items-center flex-wrap h-100">
                     <h5 class="w-100">Descanso</h5>
@@ -52,6 +52,9 @@
                 endDate.setSeconds(endDate.getSeconds() + this.restTime);
                 
                 this.time = endDate - new Date();
+            },
+            counterEnded() {
+                console.log("acabou");
             },
             countdown() {
                 this.counting = true;
